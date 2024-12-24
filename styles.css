@@ -16,21 +16,19 @@ h1{
 }
 
 section {
-  padding: 5px 20px 20px;
+  padding: 25px 40px 40px;
 }
 
 footer {
-  background-color: #004d00;
+  background-color: #095140;
   color: white;
   text-align: center;
   padding: 10px;
-  position: fixed;
-  width: 100%;
   bottom: 0;
 }
 
 nav {
-  background-color: #D9B884;
+  background-color: white;
   padding: 10px;
   text-align: center;
 }
@@ -70,9 +68,10 @@ header .content-container {
 }
 
 main{
-  /*background: radial-gradient(circle, #F1D395, #D9B884),
-              linear-gradient(190deg, #B2CAC2, #216A59);
-  background-blend-mode: overlay;*/
+  padding: 0px;
+  background: radial-gradient(circle, #82B9AA, #CDCEB9),
+              linear-gradient(120deg, #538D7C, #CCB78C);
+  background-blend-mode: overlay;
 }
 
 .circle-frame img {
@@ -110,6 +109,7 @@ img {
 
 /* Adjust Font Size for Mobile Phones */
 @media screen and (max-width: 380px) {
+  
   body {
     font-size: 10px; /* Smaller font for small screens */
   }
