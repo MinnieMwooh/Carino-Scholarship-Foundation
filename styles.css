@@ -8,11 +8,12 @@ header {
   background-color: #095140;/*#D8AF46;*/
   color: #F1D395;
   padding: 10px;
-  text-align: left;
 }
 
-h1{
+header h1{
   font-weight: 800;
+  text-align: center; 
+  margin:0 0 15px;
 }
 
 section {
@@ -31,6 +32,9 @@ nav {
   background-color: white;
   padding: 10px;
   text-align: center;
+  width: 100%;
+  position: sticky;
+  top: 0;
 }
 
 nav a {
@@ -119,7 +123,7 @@ img {
 @media screen and (max-width: 380px) {
   
   body {
-    font-size: 10px; /* Smaller font for small screens */
+    font-size: 12px; /* Smaller font for small screens */
   }
   
   nav a {
