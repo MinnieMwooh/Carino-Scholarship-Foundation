@@ -23,7 +23,7 @@ section {
 footer {
   background-color: #095140;
   color: white;
-  text-align: center;
+  text-align: left;
   padding: 10px;
   bottom: 0;
 }
@@ -76,6 +76,10 @@ main{
   background: radial-gradient(circle, #82B9AA, #CDCEB9),
               linear-gradient(120deg, #538D7C, #CCB78C);
   background-blend-mode: overlay;
+}
+
+a{
+    color:#107F63;
 }
 
 .circle-frame img {
