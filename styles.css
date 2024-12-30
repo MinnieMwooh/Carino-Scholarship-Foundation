@@ -1,4 +1,8 @@
-body {
+* {
+    box-sizing: border-box;
+}
+
+html, body {
   font-family: 'Faustina', serif;
   margin: 0;
   padding: 0;
@@ -35,6 +39,7 @@ nav {
   width: 100%;
   position: sticky;
   top: 0;
+  overflow-x: hidden;
 }
 
 nav a {
@@ -44,22 +49,20 @@ nav a {
   margin: 0 4vw;
 }
 
-header .content-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
 .content-container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
 
+.indent {
+  padding-left: 20px;
+}
+
 .box {
   border: 1px;
   padding: 20px;
-  flex: 1 1 cals(20% - 10px); 
+  flex: 1; 
   box-sizing: border-box;
 }
 
@@ -102,7 +105,11 @@ img {
 }
 
 /* Adjust Font Size for Tablets */
-@media screen and (max-width: 777px) {
+@media screen and (max-width: 777px) { 
+  nav a {
+    margin: 0 3vw;
+  }
+
   img {
     width: 30vw;
     height: auto;
@@ -124,8 +131,7 @@ img {
 }
 
 /* Adjust Font Size for Mobile Phones */
-@media screen and (max-width: 380px) {
-  
+@media screen and (max-width: 422px) {
   body {
     font-size: 12px; /* Smaller font for small screens */
   }
