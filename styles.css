@@ -63,7 +63,14 @@ nav a {
   border: 1px;
   padding: 20px;
   flex: 1; 
-  box-sizing: border-box;
+}
+
+.content-container .circle-frame{
+    flex: 0 0 auto;
+}
+
+.content-container p{
+    flex: 1;
 }
 
 .circle-frame {
