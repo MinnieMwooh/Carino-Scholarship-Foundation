@@ -8,10 +8,19 @@ html, body {
   padding: 0;
 }
 
+p {
+    font-size: 18px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
 header {
   background-color: #095140;/*#D8AF46;*/
   color: #F1D395;
   padding: 10px;
+  font-size: 25px;
 }
 
 header h1{
@@ -44,6 +53,7 @@ nav {
 
 nav a {
   font-weight: 600;
+  font-size: 18px;
   color: #333;
   text-decoration: none;
   margin: 0 4vw;
@@ -65,20 +75,12 @@ nav a {
   flex: 1; 
 }
 
-.content-container .circle-frame{
+.content-container .circle-frame, .content-container .circle-frame-large{
     flex: 0 0 auto;
 }
 
-.content-container p{
+.content-container div, .content-container p{
     flex: 1;
-}
-
-.circle-frame-large {
-  width: 155px;
-  height: 155px;
-  border-radius: 50%;
-  border: 5px solid #3D7F71;
-  overflow: hidden;
 }
 
 .circle-frame {
@@ -86,6 +88,14 @@ nav a {
   height: 125px;
   border-radius: 50%;
   border: 5px solid #3D7F71;
+  overflow: hidden;
+}
+
+.circle-frame-large {
+  width: 155px;
+  height: 155px;
+  border-radius: 50%;
+  border: 7px solid #3D7F71;
   overflow: hidden;
 }
 
@@ -141,13 +151,13 @@ img {
   .circle-frame {
     width: 80px;
     height: 80px;
-    border: 3px solid #3D7F71;
+    border-width: 3px;
   }
   
   .circle-frame-large {
     width: 105px;
     height: 105px;
-    border: 2px solid #3D7F71;
+    border-width: 5px;
   }
 }
 
@@ -164,12 +174,12 @@ img {
   .circle-frame {
     width: 50px;
     height: 50px;
-    border: 2px solid #3D7F71;
+    border-width: 2px;
   }
   
   .circle-frame-large {
     width: 75px;
     height: 75px;
-    border: 2px solid #3D7F71;
+    border-width: 4px;
   }
 }
