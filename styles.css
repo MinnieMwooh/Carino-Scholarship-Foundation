@@ -164,7 +164,10 @@ hr.rounded {
 
   .logo-large {
     width: 30vw;
-    height: auto;
+  }
+
+  .logo-small{
+    height: 60px;
   }
   
   body {
@@ -185,11 +188,6 @@ hr.rounded {
     width: 105px;
     height: 105px;
     border-width: 5px;
-  }
-
-  .logo-small{
-    width: auto;
-    height: 60px;
   }
 }
 
@@ -213,5 +211,9 @@ hr.rounded {
     width: 75px;
     height: 75px;
     border-width: 4px;
+  }
+  
+  .logo-small{
+    height: 40px;
   }
 }
