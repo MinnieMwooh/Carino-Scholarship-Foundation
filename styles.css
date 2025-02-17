@@ -8,6 +8,17 @@ html, body {
   padding: 0;
 }
 
+main{
+  padding: 0px;
+  background: radial-gradient(circle, #82B9AA, #CDCEB9),
+              linear-gradient(120deg, #538D7C, #CCB78C);
+  background-blend-mode: overlay;
+}
+
+a{
+    color:#107F63;
+}
+
 p {
     font-size: 18px;
 }
@@ -20,13 +31,25 @@ header {
   background-color: #095140;/*#D8AF46;*/
   color: #F1D395;
   padding: 10px;
-  font-size: 25px;
+  font-size: 28px;
 }
 
-header h1{
+h1{
   font-weight: 800;
   text-align: center; 
   margin:0 0 15px;
+}
+
+h2{
+  font-size: 35px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+h3{
+  font-size: 30px;
+  color: #000;
+  font-weight: 600;
 }
 
 section {
@@ -49,6 +72,7 @@ nav {
   position: sticky;
   top: 0;
   overflow-x: hidden;
+  z-index: 2;
 }
 
 nav a {
@@ -57,6 +81,15 @@ nav a {
   color: #333;
   text-decoration: none;
   margin: 0 4vw;
+}
+
+/* Add a red background color to navbar links on hover */
+nav a:hover {
+  text-decoration: underline;
+}
+
+.indent {
+  padding-left: 20px;
 }
 
 .content-container {
@@ -89,16 +122,16 @@ nav a {
 }
 
 .circle-frame {
-  width: 125px;
-  height: 125px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   border: 5px solid #3D7F71;
   overflow: hidden;
 }
 
 .circle-frame-large {
-  width: 155px;
-  height: 155px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   border: 7px solid #3D7F71;
   overflow: hidden;
@@ -109,21 +142,6 @@ nav a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-main{
-  padding: 0px;
-  background: radial-gradient(circle, #82B9AA, #CDCEB9),
-              linear-gradient(120deg, #538D7C, #CCB78C);
-  background-blend-mode: overlay;
-}
-
-a{
-    color:#107F63;
-}
-
-.indent {
-  padding-left: 20px;
 }
 
 .center-img {
@@ -155,6 +173,88 @@ hr.rounded {
     border-radius: 5px;
     margin: 0 10vw;
 }
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 60vw;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  z-index: 1;
+}
+
+/* Hide the images by default */
+.slide {
+  display: none;
+}
+
+.slide *{
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  width: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #095140;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #82B9AA;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
 
 /* Adjust Font Size for Tablets */
 @media screen and (max-width: 777px) { 
