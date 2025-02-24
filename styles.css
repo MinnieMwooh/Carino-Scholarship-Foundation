@@ -256,6 +256,12 @@ hr.rounded {
 }
 
 
+#footer-text a{
+  color: #F1D395;
+  text-decoration: none;
+}
+
+
 /* Adjust Font Size for Tablets */
 @media screen and (max-width: 777px) { 
   nav a {
