@@ -53,7 +53,7 @@ h3{
 }
 
 section {
-  padding: 25px 40px 40px;
+  padding: 15px 25px;
 }
 
 footer {
@@ -163,21 +163,27 @@ nav a:hover {
 
 /* Solid border */
 hr.solid {
-    border: 2px solid whitesmoke;
-    margin: 0;
+  border: 2px solid whitesmoke;
+  margin: 0;
 }
   
 /* Rounded border */
 hr.rounded {
-    border: 1px solid #000;
-    border-radius: 5px;
-    margin: 0 10vw;
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin: 0 10vw;
+}
+
+hr#slide {
+  margin: 0px;
+  border: 5px solid transparent;
 }
 
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 60vw;
+  width: 55vw;
+  min-width: 650px;
   position: relative;
   margin: auto;
   text-align: center;
@@ -193,7 +199,8 @@ hr.rounded {
   align-items: center;
   justify-content: center;
   width: auto;
-  height: 30vw;
+  height: 35vw;
+  min-height: 50vh;
 }
 
 /* Next & previous buttons */
@@ -303,17 +310,31 @@ hr.rounded {
     border-width: 5px;
   }
 
-  .dot {
-    height: 10px;
-    width: 10px;
-  }
-
   .content-container{
     flex-direction: column;
   }
 
   .content-container .content-container{
     flex-direction: column;
+  }
+
+  .slideshow-container{
+    width: 80vw;
+    min-width: 380px;
+  }
+
+  .slide *{
+    height: 45vw;
+    min-height: 250px;
+  }
+
+  .dot{
+    height: 10px;
+    width: 10px;
+  }
+
+  hr#slide{
+    border: 4px;
   }
 }
 
@@ -341,5 +362,23 @@ hr.rounded {
   
   .logo-small{
     height: 40px;
+  }
+
+  .slideshow-container{
+    width: 85vw;
+    min-width: 0px;
+  }
+
+  .slide *{
+    min-height: 100px;
+  }
+
+  .dot{
+    height: 7px;
+    width: 7px;
+  }
+
+  hr#slide{
+    border: 3px;
   }
 }
