@@ -83,7 +83,7 @@ nav a {
   margin: 0 4vw;
 }
 
-/* Add a red background color to navbar links on hover */
+/* Add underline to navbar links on hover */
 nav a:hover {
   text-decoration: underline;
 }
