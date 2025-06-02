@@ -42,8 +42,6 @@ h1{
 
 h2{
   font-size: 35px;
-  margin-top: 20px;
-  margin-bottom: 0px;
 }
 
 h3{
@@ -53,7 +51,7 @@ h3{
 }
 
 section {
-  padding: 15px 25px;
+  padding: 3rem 5rem;
 }
 
 footer {
@@ -96,6 +94,7 @@ nav a:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
   /* overflow-x: auto; */
 }
 
@@ -137,7 +136,10 @@ nav a:hover {
   overflow: hidden;
 }
 
-.circle-frame img, .circle-frame-large img {
+img, video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0px;
   width: 100%;
   height: 100%;
@@ -158,7 +160,41 @@ nav a:hover {
 
 .logo-small{
   width: auto;
-  height: 100px;
+  height: 10rem;
+}
+
+section#about, section#join{
+  scroll-margin-top: 2rem;
+}
+
+section.gold{
+  background: linear-gradient(145deg, #F1D395, white);
+}
+
+#about div.box{
+  padding-top: 0px;
+  padding-bottom: 30px;
+  background: linear-gradient(150deg, rgba(245, 245, 220, 0.871), transparent);
+  border-radius: 5px;
+}
+
+p.bio{
+  background: beige;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 0;
+}
+
+#intro{
+  width: 704px;
+  height: 396px;
+  margin: auto;
+  z-index: 1;
+}
+
+iframe{
+  width: 100%;
+  height: 100%;
 }
 
 /* Solid border */
@@ -179,11 +215,10 @@ hr#slide {
   border: 5px solid transparent;
 }
 
-
 /* Slideshow container */
 .slideshow-container {
-  width: 55vw;
-  min-width: 650px;
+  width: 50vw;
+  min-width: 500px;
   position: relative;
   margin: auto;
   text-align: center;
@@ -199,7 +234,7 @@ hr#slide {
   align-items: center;
   justify-content: center;
   width: auto;
-  height: 35vw;
+  height: 30vw;
   min-height: 50vh;
 }
 
@@ -279,7 +314,7 @@ hr#slide {
   }
 
   .logo-small{
-    height: 60px;
+    height: 6rem;
   }
   
   body {
@@ -296,6 +331,15 @@ hr#slide {
 
   h3{
     font-size: 25px;
+  }
+
+  section {
+    padding: 2rem 3rem;
+  }
+  
+  #intro {
+    width: 400px;
+    height: 255px;  
   }
   
   .circle-frame {
@@ -320,7 +364,7 @@ hr#slide {
 
   .slideshow-container{
     width: 80vw;
-    min-width: 380px;
+    min-width: 350px;
   }
 
   .slide *{
@@ -347,6 +391,15 @@ hr#slide {
   nav a {
     margin: 0 8px;
   }
+
+  section {
+    padding: 1rem;
+  }
+  
+  #intro{
+    width: 224px;
+    height: 126px;
+  }
   
   .circle-frame {
     width: 60px;
@@ -359,14 +412,10 @@ hr#slide {
     height: 75px;
     border-width: 4px;
   }
-  
-  .logo-small{
-    height: 40px;
-  }
 
   .slideshow-container{
     width: 85vw;
-    min-width: 0px;
+    min-width: 40px;
   }
 
   .slide *{
