@@ -109,7 +109,6 @@ nav a:hover {
     border: 1px;
     padding: 20px;
     flex-direction: row;
-    /* flex: 1 1 500px; */
 }
 
 .box {
@@ -167,7 +166,8 @@ img, video {
 
 .logo-small{
   width: auto;
-  height: 10rem;
+  height: 8rem;
+  padding: 0px;
 }
 
 .fa{
@@ -207,6 +207,12 @@ p.bio{
   border-radius: 15px;
   padding: 20px;
   margin: 0;
+}
+
+#sponsers{
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 #intro{
@@ -321,14 +327,12 @@ hr#slide {
   to {opacity: 1}
 }
 
-
 footer a{
   color: #F1D395;
 }
 
-
 /* Adjust Font Size for Tablets */
-@media screen and (max-width: 777px) { 
+@media screen and (max-width: 800px) { 
   nav a {
     margin: 0 3vw;
   }
@@ -342,7 +346,15 @@ footer a{
   }
   
   body {
-    font-size: 14px; /* Slightly smaller font for tablets */
+    font-size: 16px; /* Slightly smaller font for tablets */
+  }
+  
+  p {
+    font-size: 16px; /* Slightly smaller font for tablets */
+  }
+
+  #contact p {
+    font-size: 15px; /* Slightly smaller font for tablets */
   }
 
   header{
@@ -367,14 +379,14 @@ footer a{
   }
   
   .circle-frame {
-    width: 95px;
-    height: 95px;
+    width: 110px;
+    height: 110px;
     border-width: 4px;
   }
   
   .circle-frame-large {
-    width: 115px;
-    height: 115px;
+    width: 130px;
+    height: 130px;
     border-width: 5px;
   }
 
@@ -384,6 +396,7 @@ footer a{
 
   .content-container .content-container{
     flex-direction: column;
+    padding: 5px 0px;
   }
 
   .slideshow-container{
@@ -404,36 +417,83 @@ footer a{
   hr#slide{
     border: 4px;
   }
+
+  #sponsers{
+    gap: 15px;
+  }
 }
 
 /* Adjust Font Size for Mobile Phones */
-@media screen and (max-width: 422px) {
+@media screen and (max-width: 550px) {
   body {
-    font-size: 12px; /* Smaller font for small screens */
+    font-size: 14px; /* Smaller font for small screens */
+  }
+  
+  p {
+    font-size: 14px; /* Slightly smaller font for tablets */
+  }
+
+  #contact p {
+    font-size: 13px; /* Slightly smaller font for tablets */
+  }
+
+  header{
+    font-size: 2vw;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  h3{
+    font-size: 20px;
   }
   
   nav a {
     margin: 0 8px;
+    font-size: 13px;
   }
 
   section {
     padding: 1rem;
+  }
+
+  #board_member{
+    padding-left: 0px;
   }
   
   #intro{
     width: 224px;
     height: 126px;
   }
-  
-  .circle-frame {
-    width: 60px;
-    height: 60px;
-    border-width: 3px;
+
+  .fa{
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+
+  #contact .fa{
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .content-container .content-container{
+    padding: 5px;
   }
   
+  .circle-frame {
+    width: 80px;
+    height: 80px;
+    border-width: 3px;
+  }
+
+  .logo-small{
+    height: 4rem;
+  }
+
   .circle-frame-large {
-    width: 75px;
-    height: 75px;
+    width: 95px;
+    height: 95px;
     border-width: 4px;
   }
 
@@ -453,5 +513,9 @@ footer a{
 
   hr#slide{
     border: 3px;
+  }
+
+  #sponsers{
+    gap: 5px;
   }
 }
