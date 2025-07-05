@@ -19,7 +19,7 @@ a{
     color:#107F63;
 }
 
-p {
+body {
     font-size: 18px;
 }
 
@@ -53,6 +53,11 @@ h2{
 h3{
   font-size: 30px;
   color: #000;
+  font-weight: 600;
+}
+
+h4{
+  font-size: 20px;
   font-weight: 600;
 }
 
@@ -215,6 +220,11 @@ p.bio{
   flex-direction: row;
 }
 
+#winner{
+  margin: 0rem 2rem;
+  margin-top: 2rem;
+}
+
 #intro{
   width: 704px;
   height: 396px;
@@ -348,10 +358,6 @@ footer a{
   body {
     font-size: 16px; /* Slightly smaller font for tablets */
   }
-  
-  p {
-    font-size: 16px; /* Slightly smaller font for tablets */
-  }
 
   #contact p {
     font-size: 15px; /* Slightly smaller font for tablets */
@@ -367,6 +373,10 @@ footer a{
 
   h3{
     font-size: 25px;
+  }
+
+  h4{
+    font-size: 18px;
   }
 
   section {
@@ -421,16 +431,17 @@ footer a{
   #sponsers{
     gap: 15px;
   }
+
+  #winner{
+    margin: 0rem;
+    margin-top: 2rem;
+  }
 }
 
 /* Adjust Font Size for Mobile Phones */
 @media screen and (max-width: 550px) {
   body {
     font-size: 14px; /* Smaller font for small screens */
-  }
-  
-  p {
-    font-size: 14px; /* Slightly smaller font for tablets */
   }
 
   #contact p {
@@ -447,6 +458,10 @@ footer a{
 
   h3{
     font-size: 20px;
+  }
+
+  h4{
+    font-size: 16px;
   }
   
   nav a {
@@ -488,7 +503,7 @@ footer a{
   }
 
   .logo-small{
-    height: 4rem;
+    height: 3rem;
   }
 
   .circle-frame-large {
