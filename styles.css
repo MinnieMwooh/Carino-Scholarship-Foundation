@@ -131,6 +131,14 @@ nav a:hover {
     flex: 1;
 }
 
+.empty-frame {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 7px solid #3D7F71;
+  background-color: lightgray;
+}
+
 .circle-frame {
   width: 150px;
   height: 150px;
@@ -212,6 +220,15 @@ p.bio{
   border-radius: 15px;
   padding: 20px;
   margin: 0;
+}
+
+.bio h4{
+  margin-bottom: 0em;
+  font-weight: bold;
+}
+
+.bio em{
+  font-weight: 500;
 }
 
 #sponsers{
@@ -394,7 +411,7 @@ footer a{
     border-width: 4px;
   }
   
-  .circle-frame-large {
+  .circle-frame-large, .empty-frame {
     width: 130px;
     height: 130px;
     border-width: 5px;
@@ -506,7 +523,7 @@ footer a{
     height: 3rem;
   }
 
-  .circle-frame-large {
+  .circle-frame-large, .empty-frame {
     width: 95px;
     height: 95px;
     border-width: 4px;
